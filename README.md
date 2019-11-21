@@ -1,1 +1,1 @@
-# DSCI_532_GROUP_109
+# DSCI 532 - GROUP 109: Titanic Dashboard Project
