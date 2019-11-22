@@ -59,5 +59,5 @@ For incidents which are raised to the DSCI 532 teaching team for review, the off
 
 Group 109 would like to acknowledge and thank the authors of the following documents from which our Code of Conduct was inspired and partially derived:
 
-[UBC Data Science 100 CoC](https://github.com/UBC-DSCI/dsci-100/blob/master/CODE_OF_CONDUCT.md)
+[UBC Data Science 100 CoC](https://github.com/UBC-DSCI/dsci-100/blob/master/CODE_OF_CONDUCT.md)  
 [Vox Media CoC](https://code-of-conduct.voxmedia.com/?_ga=1.62865454.308680892.1455143920)
