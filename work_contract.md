@@ -62,4 +62,4 @@ We have grouped these work principles into the following four categories:
 
 - To ensure the contributions of each Member are equitable with respect to quantity, quality and timeliness, the Team will hold a formal project review at the start of each weekly lab to discuss and immediately remedy any issues in this regard
 
-- As the general MDS lab guidelines form part of the project grading rubric and provide a useful foundation for the technical integrity of the project, we agree to individually and collectively adherence to these standards and hold each other accountable for this objective
+- As the [MDS general lab instructions](https://ubc-mds.github.io/resources_pages/general_lab_instructions/) form part of the project grading rubric and provide a useful foundation for the technical integrity of the project, we agree to individually and collectively adhere to these guidelines and hold each other accountable to this objective
