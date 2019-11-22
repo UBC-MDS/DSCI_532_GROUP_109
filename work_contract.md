@@ -18,10 +18,10 @@ The results of the first Team meeting on November 21, 2019 shown above capture t
 
 We have grouped these work principles into the following four categories:  
 
-    1. Communications
-    2. Team Welfare and Equity
-    3. Flexibility
-    4. Responsibilities and Performance Standards
+   1. Communications
+   2. Team Welfare and Equity
+   3. Flexibility
+   4. Responsibilities and Performance Standards
 
 #### Communications  
 
@@ -61,3 +61,5 @@ We have grouped these work principles into the following four categories:
 
 
 - To ensure the contributions of each Member are equitable with respect to quantity, quality and timeliness, the Team will hold a formal project review at the start of each weekly lab to discuss and immediately remedy any issues in this regard
+
+- As the general MDS lab guidelines form part of the project grading rubric and provide a useful foundation for the technical integrity of the project, we agree to individually and collectively adherence to these standards and hold each other accountable for this objective
