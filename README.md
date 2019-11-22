@@ -2,4 +2,4 @@
 
 This repo contains a dashboard with visualizations of the titanic survival rates
 
-![]("img/dashboard_sketch.png")
+![](img/dashboard_sketch.png)
