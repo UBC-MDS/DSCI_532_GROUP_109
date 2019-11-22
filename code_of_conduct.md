@@ -11,7 +11,7 @@ The Code applies to all activities associated with UBC course DSCI 532 irrespect
 
 ### Statement of Values  
 
-Group 109 is committed to creating and maintaining a supportive working and learning environment for its Members and stakeholders which includes but is not limited to fellow MDS students, MDS faculty, teaching teams and administrators, and any other external parties with which the team may engage when representing the Team.  
+Group 109 is committed to creating and maintaining a supportive working and learning environment for its Members and stakeholders which includes but is not limited to fellow MDS students, MDS faculty, teaching teams and administrators, and any other external parties with which the Team may engage when representing the Team.  
 
 We oppose and prohibit any form of communication or behaviour within the Team or with stakeholders which excludes, physically or mentally intimidates, or causes others to feel unwelcome or unsafe. Exclusionary communication and behaviour encompasses both acts of commission and omission.  
 
