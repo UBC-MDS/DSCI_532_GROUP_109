@@ -4,5 +4,7 @@
 
 We welcome all feedback, ideas and suggestions for improving the visualizations for this project and any tips for how to enhance our general visualizations skills as aspiring data scientists.  
 
-If you notice a bug, or have a feature request, please open up an issue here for our team to review. If you would like to contribute a feature or bug fix, just fork our repo and submit a pull request. We will review all pull requests within 7 days. Our only request is that all contributors abide by our [https://github.com/UBC-MDS/DSCI_532_GROUP_109/blob/master/code_of_conduct.md](Code of Conduct).
+If you notice a bug, or have a feature request, please open up an issue here for our team to review. If you would like to contribute a feature or bug fix, just fork our repo and submit a pull request. We will review all pull requests within 7 days. 
+
+Our only request is that all contributors abide by our [Code of Conduct](https://github.com/UBC-MDS/DSCI_532_GROUP_109/blob/master/code_of_conduct.md).
 
