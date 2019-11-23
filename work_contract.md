@@ -31,7 +31,7 @@ We have grouped these work principles into the following four categories:
 
 - For all formal project contributions, Members shall push contributions to GitHub and make pull requests for another Member to approve and merge
 
-- We do not place restrictions on the days of the week or time of day for ad-hoc communications within the Team members, but mutually agree that prompt  responses are unlikely for communication initiated during the hours of 1:00-9:00 due to daily sleep schedules and routines
+- We do not place restrictions on the days of the week or time of day for ad-hoc communications within the Team, but mutually agree that under normal circumstances prompt responses should not be expected for communication initiated during the hours of 1:00-9:00 AM due to daily sleep schedules and morning routines
 
 
 #### Team Welfare and Equity  
@@ -44,7 +44,7 @@ We have grouped these work principles into the following four categories:
 
 
 #### Flexibility
-- We agree to be flexible on working hours and meeting venues and believe that a combination of in-person meetings, online meetings and independent individual work will maximize productivity and quality of the project
+- We agree to be flexible on working hours and meeting venues and believe that an appropriate task-determined combination of in-person meetings, online meetings and independent individual work will maximize productivity and quality of the project
 
 
 - We agree that except in extenuating circumstances (e.g. personal/family emergencies), a minimum initial response time of four hours is expected for any Member requests of a non-urgent nature (i.e not related to a submission deadline on the same day)
@@ -57,7 +57,7 @@ We have grouped these work principles into the following four categories:
 - We agree to clearly and explicitly outline division of work responsibilities to avoid any ambiguity, miscommunication of expectations, or degradation of performance
 
 
-- We agree to hold each other to the highest standards of performance and ensure each Member is contributing meaningfully and substantially to the goal of achieving an A+ grade for the project
+- We agree to hold each other accountable to the highest standards of performance and ensure each Member is actively and meaningfully contributing to the goal of achieving an A+ grade for the project
 
 
 - To ensure the contributions of each Member are equitable with respect to quantity, quality and timeliness, the Team will hold a formal project review at the start of each weekly lab to discuss and immediately remedy any issues in this regard
