@@ -8,5 +8,4 @@ If you spot a bug or have a feature request, please open up an issue for our us 
 
 Our only request is that all contributors abide by our [Code of Conduct](https://github.com/UBC-MDS/DSCI_532_GROUP_109/blob/master/code_of_conduct.md).
 
-Thanks!  
-Group 109
+Thanks!
