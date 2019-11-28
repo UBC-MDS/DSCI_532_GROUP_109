@@ -4,4 +4,5 @@ This app consists of a dashboard containing visualizations related to the surviv
 
 In additional to this visualization, two bar graphs allow users to see the aggregate death rates as a function of passenger class and deck level. A sketch of the dashboard is included below.
 
+
 ![](img/dashboard_sketch.png)
