@@ -89,3 +89,14 @@ def make_titanic_plot(deck_level='A'):
                 ).configure_legend(orient='bottom')
     
     return full_plot
+
+def make_class_plot():
+    titanic_df = pd.read_csv("../data/titanic.csv").fillna("None")
+    class_survived_df = titanic_df[['pclass','survived']]
+    source_1 = class_survived_df.groupby('pclass').mean()*100
+    source_2 = source_1.reset_index()
+    chart = alt.Chart(source_2).mark_bar(size = 10, color = "red").encode(
+        alt.X('survived:Q', title = "Rate of Survival"),
+        alt.Y("pclass:O", title = "Class")
+        ).properties(title = "Survival Rate by Class", width = 500, height=50)
+    return chart
