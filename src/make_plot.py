@@ -1,6 +1,6 @@
 import pandas as pd
 import altair as alt
-def make_titanic_plot(deck_level):
+def make_titanic_plot(deck_level='A'):
     titanic_df = pd.read_csv("../data/titanic.csv").fillna("None")
     
     cabin_locations = {"A36": (350, 1.0), "A37": (350, 6.0), "A32": (400, 6.0), "A30": (400, 5.0), "A31": (400, 2.0), "A33": (400, 1.0), "A28": (405, 6.0), "A26": (405, 5.0), "A27": (405, 2.0),
@@ -70,20 +70,22 @@ def make_titanic_plot(deck_level):
     chart_ship_outline = chart_ship_outline_1 + chart_ship_outline_2 + chart_ship_outline_3
     
     cabin_plot = alt.Chart(cabin_locations_df.loc[deck_level]).mark_square(size = 1400, fill = "None", stroke = "black", opacity = 0.3).encode(
-        alt.X('cabin_x:Q', title = "", scale=alt.Scale(domain = [300,450])),
+        alt.X('cabin_x:Q', title = "", scale=alt.Scale(domain = [300,480])),
         alt.Y('cabin_y:Q', title = "", scale=alt.Scale(domain = [-1,7.5]))
     ).properties(width = 1500, height = 400)
     titanic_passengers_by_cabin = titanic_passengers_by_cabin.reset_index().set_index(["deck","cabin"])
     titanic_passengers_by_cabin["survived"] = titanic_passengers_by_cabin["survived"].map({0:"Passenger Died", 1:"Passenger Survived"})
     
     passenger_plot = alt.Chart(titanic_passengers_by_cabin.loc[deck_level]).mark_point(size = 250, stroke = "black", filled = True, opacity = 1).encode(
-        alt.X('cabin_x:Q', scale=alt.Scale(domain = [300,450])),
+        alt.X('cabin_x:Q', scale=alt.Scale(domain = [300,480])),
         alt.Y('cabin_y:Q', scale=alt.Scale(domain = [-1,7.5])),
-        alt.Color('survived:N', scale=alt.Scale(range = ['red','white']), legend = alt.Legend(titleFontSize = 0, labelFontSize = 17)),
+        alt.Color('survived:N', scale=alt.Scale(range = ['red','white']), 
+                                legend = alt.Legend(titleFontSize = 0, labelFontSize = 17)),
         tooltip=['name:N', 'sex:N', 'age:O']
     ).properties(width = 1500, height = 400, title = "Fate of titanic passengers by cabin location on deck {}".format(deck_level))
     
     full_plot = (cabin_plot + passenger_plot + chart_ship_outline
-                ).configure_title(fontSize = 20)
+                ).configure_title(fontSize = 20
+                ).configure_legend(orient='bottom')
     
     return full_plot
