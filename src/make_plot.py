@@ -100,3 +100,14 @@ def make_class_plot():
         alt.Y("pclass:O", title = "Class")
         ).properties(title = "Survival Rate by Class", width = 500, height=50)
     return chart
+
+def make_deck_plot():
+    titanic_deck_df = pd.read_csv("../data/wrangled_titanic_df.csv").fillna("None")
+    titanic_deck_df['survived'] = titanic_deck_df['survived'].map({'Passenger Survived':1, 'Passenger Died':0})
+    titanic_deck_df = titanic_deck_df.groupby('deck').mean()*100
+    titanic_deck_df = titanic_deck_df.reset_index()
+    chart = alt.Chart(titanic_deck_df).mark_bar(size = 10, color = "red").encode(
+            alt.X('survived:Q', title = "Rate of Survival"),
+            alt.Y("deck:O", title = "Deck")
+        ).properties(title = "Survival Rate by Deck", width = 500, height=50)
+    return chart
