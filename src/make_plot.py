@@ -96,7 +96,7 @@ def make_class_plot():
     source_1 = class_survived_df.groupby('pclass').mean()*100
     source_2 = source_1.reset_index()
     chart = alt.Chart(source_2).mark_bar(size = 10, color = "red").encode(
-        alt.X('survived:Q', title = "Rate of Survival"),
-        alt.Y("pclass:O", title = "Class")
+            alt.X('survived:Q', title = "Rate of Survival"),
+            alt.Y("pclass:O", title = "Class")
         ).properties(title = "Survival Rate by Class", width = 500, height=50)
     return chart
