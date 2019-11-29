@@ -4,13 +4,12 @@ import dash_html_components as html
 from dash.dependencies import Input, Output
 import dash_bootstrap_components as dbc
 import altair as alt
-import vega_datasets
-from make_plot import make_titanic_plot, make_class_plot
+from make_plot import make_titanic_plot, make_class_plot, make_deck_plot, make_deck_legend
 
 app = dash.Dash(__name__, assets_folder='assets', external_stylesheets=[dbc.themes.CERULEAN])
 server = app.server
 
-app.title = 'Fate of Titanic Passengers by Location'
+app.title = 'Fate of Titanic Passengers by Location on Ship'
 
 jumbotron = dbc.Jumbotron(
     [
@@ -18,7 +17,7 @@ jumbotron = dbc.Jumbotron(
             [
                 html.Img(src='https://www.thoughtco.com/thmb/JAh1c6CpoPyyuPo3H-kEi0ZocZ0=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/the-titanic-HK4695-001-57d8674f3df78c58339ac2fd.jpg', 
                       width='500px'),
-                html.H1("Fate of Titanic Passengers by Location", className="display-3"),
+                html.H1("Fate of Titanic Passengers by Location on Ship", className="display-3"),
             ],
             fluid=True,
         )
@@ -34,12 +33,16 @@ row1 = dbc.Row(
                         height='550',
                         width='1600',
                         style={'border-width': '2px'},
-                        ), width=10,),
+                        ), width=10),
 
-                dbc.Col(        
-                    html.Img(src='https://www.thoughtco.com/thmb/JAh1c6CpoPyyuPo3H-kEi0ZocZ0=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/the-titanic-HK4695-001-57d8674f3df78c58339ac2fd.jpg', 
-                      width='100x'), width=2
-                )]
+                dbc.Col(
+                    html.Iframe(
+                        sandbox='allow-scripts',
+                        id='plot1',
+                        height='550',
+                        width='300',
+                        style={'border-width': '2px'},
+                        ), width=2)]
             )
             
 row2 = dbc.Row(
@@ -61,14 +64,19 @@ row3 = dbc.Row(
                         id='plot2',
                         height='550',
                         width='1600',
-                        style={'border-width': '2px'},
+                        style={'border-width': '0px'},
                         srcDoc = make_class_plot().to_html()
                         ), width=6),
 
-                dbc.Col(        
-                    html.Img(src='https://www.thoughtco.com/thmb/JAh1c6CpoPyyuPo3H-kEi0ZocZ0=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/the-titanic-HK4695-001-57d8674f3df78c58339ac2fd.jpg', 
-                      width='100x'), width=2
-                )]) 
+                dbc.Col(
+                    html.Iframe(
+                        sandbox='allow-scripts',
+                        id='plot3',
+                        height='550',
+                        width='1600',
+                        style={'border-width': '0px'},
+                        srcDoc = make_deck_plot().to_html()
+                        ), width=6)]) 
 
 footer = dbc.Container([
             dbc.Row(
@@ -90,10 +98,20 @@ app.layout = html.Div([jumbotron,
     [dash.dependencies.Input('dd-chart', 'value')])
 def update_plot(deck):
     '''
-    Takes in an xaxis_column_name and calls make_plot to update our Altair figure
+    Takes in a deck_level and calls make_titanic_plot to update our first figure
     '''
     updated_plot = make_titanic_plot(deck).to_html()
     return updated_plot
+
+@app.callback(
+    dash.dependencies.Output('plot1', 'srcDoc'),
+    [dash.dependencies.Input('dd-chart', 'value')])
+def update_plot_2(deck):
+    '''
+      Takes in a deck_level and calls make_deck_legend to update our second figure
+    '''
+    updated_plot_2 = make_deck_legend(deck).to_html()
+    return updated_plot_2
 
 if __name__ == '__main__':
     app.run_server(debug=True)
