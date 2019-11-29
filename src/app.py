@@ -44,9 +44,18 @@ row1 = dbc.Row(
                         style={'border-width': '2px'},
                         ), width=2)]
             )
-            
+
 row2 = dbc.Row(
-                [dbc.Col(        
+                [dbc.Col(
+                    html.H4("Choose a deck to display:", style={'color': 'black', 'fontSize': 14}),    
+                width=7),
+                dbc.Col(
+                    html.H4("Note: Each deck level above contains passenger cabins of all classes.", style={'color': 'black', 'fontSize': 14}),
+                width=3)
+                ])
+            
+row3 = dbc.Row(
+                [dbc.Col(    
                     dcc.Dropdown(
                         id='dd-chart',
                         options=[
@@ -57,7 +66,7 @@ row2 = dbc.Row(
                         ), width='6'
                     )])
 
-row3 = dbc.Row(
+row4 = dbc.Row(
                 [dbc.Col(
                     html.Iframe(
                         sandbox='allow-scripts',
@@ -90,7 +99,8 @@ footer = dbc.Container([
 app.layout = html.Div([jumbotron,
                        row1,
                        row2,
-                       row3, 
+                       row3,
+                       row4, 
                        footer])
 
 @app.callback(
