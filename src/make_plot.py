@@ -111,3 +111,76 @@ def make_deck_plot():
             alt.Y("deck:O", title = "Deck")
         ).properties(title = "Survival Rate by Deck", width = 500, height=50)
     return chart
+
+def make_deck_legend():
+
+    deck_legend_frame = pd.DataFrame({"x" : [0, 0, 10, 10, 0],
+                                "y" : [700, 0, 0, 700, 700]})
+
+    deck_legend_outline = alt.Chart(deck_legend_frame).mark_line().encode(
+        alt.X('x:Q'),
+        alt.Y('y:Q')).properties(
+        title = "Deck Levels")
+   
+    legend_labels = pd.DataFrame({"x" : [5, 5, 5, 5, 5, 5, 5],
+                                "y" : [50, 150, 250, 350, 450, 550, 650],
+                                "label" : ["A", "B", "C", "D", "E", "F", "G"]})
+
+    points = alt.Chart(legend_labels).mark_point(size=0).encode(
+        alt.X('x:Q', scale=alt.Scale(domain = [0,10])),
+        alt.Y('y:Q', scale=alt.Scale(domain = [0,700]))
+    )
+
+    text = points.mark_text(
+        align='center',
+        baseline='middle',
+    ).encode(
+        text='label'
+    )    
+
+    deck_levels = []
+
+    for i in range(0, 7):
+        level = pd.DataFrame({"x" : [0, 10],
+                              "y" : [(100*i), (100*i)]})
+        deck_levels.append(level)
+
+    deck_level_A = alt.Chart(deck_levels[0]).mark_line().encode(
+        alt.X('x:Q'),
+        alt.Y('y:Q')
+    )
+
+    deck_level_B = alt.Chart(deck_levels[1]).mark_line().encode(
+        alt.X('x:Q'),
+        alt.Y('y:Q')
+    )
+
+    deck_level_C = alt.Chart(deck_levels[2]).mark_line().encode(
+        alt.X('x:Q'),
+        alt.Y('y:Q')
+    )
+
+    deck_level_D = alt.Chart(deck_levels[3]).mark_line().encode(
+        alt.X('x:Q'),
+        alt.Y('y:Q')
+    )
+
+    deck_level_E = alt.Chart(deck_levels[4]).mark_line().encode(
+        alt.X('x:Q'),
+        alt.Y('y:Q')
+    )
+
+    deck_level_F = alt.Chart(deck_levels[5]).mark_line().encode(
+        alt.X('x:Q'),
+        alt.Y('y:Q')
+    )
+
+    deck_level_G = alt.Chart(deck_levels[6]).mark_line().encode(
+        alt.X('x:Q'),
+        alt.Y('y:Q')
+    )
+
+    chart = (deck_legend_outline + deck_level_A + deck_level_B + deck_level_C + deck_level_D + \
+                    deck_level_E + deck_level_F + deck_level_G + points + text).configure_axis(grid=False)
+    
+    return chart
