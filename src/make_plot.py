@@ -127,7 +127,7 @@ def make_titanic_plot(deck_level='B'):
     cabin_plot = alt.Chart(cabin_locations_df.loc[deck_level]).mark_square(size = 600, fill = "None", stroke = "black", opacity = 0.3).encode(
         alt.X('cabin_x:Q', title = "", scale=alt.Scale(domain = [300,480])),
         alt.Y('cabin_y:Q', title = "", scale=alt.Scale(domain = [-1,7.5]))
-    ).properties(width = 900, height = 300)
+    ).properties(width = 1100, height = 300)
     
     titanic_passengers_by_cabin = titanic_passengers_by_cabin.reset_index().set_index(["deck","cabin"])
     titanic_passengers_by_cabin["survived"] = titanic_passengers_by_cabin["survived"].map({0:"Passenger Died", 1:"Passenger Survived"})
@@ -139,7 +139,7 @@ def make_titanic_plot(deck_level='B'):
         alt.Color('survived:N', scale=alt.Scale(range = ['red','white']), 
                                 legend = alt.Legend(titleFontSize = 0, labelFontSize = 17)),
         tooltip=['name:N', 'sex:N', 'age:O', 'cabin:N']
-    ).properties(width = 900, height = 300, title = "Fate of titanic passengers by cabin location on deck {}".format(deck_level))
+    ).properties(width = 1100, height = 300, title = "Fate of titanic passengers by cabin location on deck {}".format(deck_level))
     
     #combine passenger, cabin and ship outline
     full_plot = (cabin_plot + passenger_plot + chart_ship_outline
@@ -163,7 +163,7 @@ def make_class_plot():
     chart = alt.Chart(source_2).mark_bar(size = 30, fill = "grey", stroke = "black").encode(
             alt.X('survived:Q', title = "Rate of Survival (%)"),
             alt.Y("pclass:O", title = "Class")
-        ).properties(title = "Survival Rate by Class", width = 550, height=170
+        ).properties(title = "Survival Rate by Class", width = 600, height=170
         ).configure_axis(grid=False, titleFontSize=16, labelFontSize = 16
         ).configure_title(fontSize = 20)
     return chart
@@ -182,7 +182,7 @@ def make_deck_plot():
     chart = alt.Chart(titanic_deck_df).mark_bar(size = 20, fill = "grey", stroke = "black").encode(
             alt.X('survived:Q', title = "Rate of Survival (%)", scale = alt.Scale(domain = [0, 80])),
             alt.Y("deck:O", title = "Deck")
-        ).properties(title = "Survival Rate by Deck", width = 550, height=170
+        ).properties(title = "Survival Rate by Deck", width = 600, height=170
         ).configure_axis(grid=False, titleFontSize=18, labelFontSize = 16
         ).configure_title(fontSize = 20)
     return chart
