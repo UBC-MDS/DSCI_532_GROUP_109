@@ -77,9 +77,11 @@ def make_titanic_plot(deck_level='B'):
     cabin_locations_df.columns = ["cabin_x", "cabin_y"]
     
     #merge cabin-coord data frame on titanic data set
-    titanic_df_with_cabin_coords = pd.merge(titanic_df, cabin_locations_df, left_on = "cabin", right_on = "cabin")
-    titanic_df_with_cabin_coords["deck"] = titanic_df_with_cabin_coords["cabin"].apply(lambda x: x[0])
-    titanic_passengers_by_cabin = titanic_df_with_cabin_coords.set_index(["cabin","name"]).sort_index()
+    #titanic_df_with_cabin_coords = pd.merge(titanic_df, cabin_locations_df, left_on = "cabin", right_on = "cabin")
+    #titanic_df_with_cabin_coords["deck"] = titanic_df_with_cabin_coords["cabin"].apply(lambda x: x[0])
+    #titanic_passengers_by_cabin = titanic_df_with_cabin_coords.set_index(["cabin","name"]).sort_index()
+    titanic_passengers_by_cabin = pd.read_csv("../data/wrangled_titanic_df.csv").fillna("None")
+    titanic_passengers_by_cabin = titanic_passengers_by_cabin.set_index(["cabin","name"])
     
     #separate coordinates for passengers in same cabin
     for cabins in titanic_passengers_by_cabin.index.levels[0]:
