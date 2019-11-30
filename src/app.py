@@ -11,21 +11,47 @@ server = app.server
 
 app.title = 'Fate of Titanic Passengers by Location on Ship'
 
-jumbotron = dbc.Jumbotron(
-    [
-        dbc.Container(
-            [
-                html.Img(src='https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/RMS_Titanic_3.jpg/600px-RMS_Titanic_3.jpg', 
-                      width='500px'),
-                html.H1("Fate of Titanic Passengers by Location on Ship", className="display-3"),
-            ],
-            fluid=True,
-        )
-    ],
-    fluid=True,
-)
+#jumbotron = dbc.Jumbotron(
+#    [   
+#        dbc.Container(
+#            [
+#                html.Img(src='https://www.fxguide.com/wp-content/uploads/2012/04/titanic_featured.jpg', 
+#                      width='1300px'),
+#                html.H1("Fate of Titanic Passengers by Location on Ship", className="display-3",
+#                         style={'color': 'white', 'fontSize': 42}),
+#            ],
+#            fluid=True,
+#        )
+#    ],
+#    fluid=True,
+#)
 
+jumbotron = dbc.Row(
+                [dbc.Col(
+                    html.H2("", style={'color': 'black', 'fontSize': 20}),    
+                width=1),
+                dbc.Col([
+                    html.Img(src='https://github.com/RobBlumberg/titanic_image/blob/master/titanic_header.jpg.png?raw=true', 
+                      width='1500px'),
+                    #html.Img(src='https://www.fxguide.com/wp-content/uploads/2012/04/titanic_featured.jpg', 
+                    #  width='1400px'),
+                    #html.H1("Fate of Titanic Passengers by Location on Ship", className="display-3",
+                    #     style={'color': 'light blue', 'fontSize': 42})
+                         ], width=10),
+
+                dbc.Col(
+                    html.H2("", style={'color': 'black', 'fontSize': 20}),    
+                width=1)
+                ]) 
+
+#spacing row
 row1 = dbc.Row(
+                [dbc.Col(
+                    html.H2("", style={'color': 'black', 'fontSize': 14}),    
+                width=7)
+                ])
+
+row2 = dbc.Row(
                 [dbc.Col(
                     html.H2("", style={'color': 'black', 'fontSize': 20}),    
                 width=1),
@@ -36,23 +62,23 @@ row1 = dbc.Row(
                         This app has been created to support an exploratory research proposal on the correlation \
                         of passenger location with survival rates which may be used to improve and democratize \
                         safety in the design of large passenger ships.", style={'color': 'black', 'fontSize': 20}),    
-                width=9)
+                width=10)
                 ])
 
 #Rows for spacing between intro and viz
-row2 = dbc.Row(
-                [dbc.Col(
-                    html.H2("", style={'color': 'black', 'fontSize': 14}),    
-                width=7)
-                ])
 row3 = dbc.Row(
                 [dbc.Col(
                     html.H2("", style={'color': 'black', 'fontSize': 14}),    
                 width=7)
                 ])
-
-
 row4 = dbc.Row(
+                [dbc.Col(
+                    html.H2("", style={'color': 'black', 'fontSize': 14}),    
+                width=7)
+                ])
+
+
+row5 = dbc.Row(
                 [dbc.Col(
                     html.H2("", style={'color': 'black', 'fontSize': 20}),    
                 width=1),
@@ -78,22 +104,22 @@ row4 = dbc.Row(
                 width=1)]
             )
 
-row5 = dbc.Row(
+row6 = dbc.Row(
                 [dbc.Col(
                     html.H2("", style={'color': 'black', 'fontSize': 20}),    
                 width=1),
                 dbc.Col(
-                    html.H4("Choose a deck to display:", style={'color': 'black', 'fontSize': 14}),    
+                    html.H4("Choose a deck to display", style={'color': 'light blue', 'fontSize': 18}),    
                 width=5),
                 dbc.Col(
-                    html.H4("Note: Each deck level above contains passenger cabins of all classes.", style={'color': 'black', 'fontSize': 14}),
+                    html.H4("Note: Each deck level above contains passenger cabins of all classes.", style={'color': 'light blue', 'fontSize': 18}),
                 width=3),
                 dbc.Col(
                     html.H2("", style={'color': 'black', 'fontSize': 20}),    
                 width=1)
                 ])
             
-row6 = dbc.Row(
+row7 = dbc.Row(
                 [dbc.Col(
                     html.H2("", style={'color': 'black', 'fontSize': 20}),    
                 width=1),
@@ -113,7 +139,7 @@ row6 = dbc.Row(
                         ), width='6'
                     )])
 
-row7 = dbc.Row(
+row8 = dbc.Row(
                 [dbc.Col(
                     html.H2("", style={'color': 'black', 'fontSize': 20}),    
                 width=1),
@@ -157,6 +183,7 @@ app.layout = html.Div([jumbotron,
                        row5, 
                        row6,
                        row7,
+                       row8,
                        footer])
 
 @app.callback(
