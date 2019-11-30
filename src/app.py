@@ -27,6 +27,9 @@ jumbotron = dbc.Jumbotron(
 
 row1 = dbc.Row(
                 [dbc.Col(
+                    html.H2("", style={'color': 'black', 'fontSize': 20}),    
+                width=1),
+                dbc.Col(
                     html.H2("The sinking of the Titanic four days into its maiden voyage on April 12, 1912 \
                         as the world’s largest ocean liner is one of the worst maritime disasters of all time \
                         which killed over 1,500 of the estimated 2,224 passengers and crew on board.\
@@ -51,35 +54,50 @@ row3 = dbc.Row(
 
 row4 = dbc.Row(
                 [dbc.Col(
+                    html.H2("", style={'color': 'black', 'fontSize': 20}),    
+                width=1),
+                dbc.Col(
                     html.Iframe(
                         sandbox='allow-scripts',
                         id='plot',
-                        height='550',
-                        width='1600',
+                        height='420',
+                        width='1200',
                         style={'border-width': '2px'},
-                        ), width=10),
+                        ), width=8),
 
                 dbc.Col(
                     html.Iframe(
                         sandbox='allow-scripts',
                         id='plot1',
-                        height='550',
+                        height='420',
                         width='300',
                         style={'border-width': '2px'},
-                        ), width=2)]
+                        ), width=2),
+                dbc.Col(
+                    html.H2("", style={'color': 'black', 'fontSize': 20}),    
+                width=1)]
             )
 
 row5 = dbc.Row(
                 [dbc.Col(
+                    html.H2("", style={'color': 'black', 'fontSize': 20}),    
+                width=1),
+                dbc.Col(
                     html.H4("Choose a deck to display:", style={'color': 'black', 'fontSize': 14}),    
-                width=7),
+                width=5),
                 dbc.Col(
                     html.H4("Note: Each deck level above contains passenger cabins of all classes.", style={'color': 'black', 'fontSize': 14}),
-                width=3)
+                width=3),
+                dbc.Col(
+                    html.H2("", style={'color': 'black', 'fontSize': 20}),    
+                width=1)
                 ])
             
 row6 = dbc.Row(
-                [dbc.Col(    
+                [dbc.Col(
+                    html.H2("", style={'color': 'black', 'fontSize': 20}),    
+                width=1),
+                dbc.Col(    
                     dcc.Dropdown(
                         id='dd-chart',
                         options=[
@@ -92,6 +110,9 @@ row6 = dbc.Row(
 
 row7 = dbc.Row(
                 [dbc.Col(
+                    html.H2("", style={'color': 'black', 'fontSize': 20}),    
+                width=1),
+                dbc.Col(
                     html.Iframe(
                         sandbox='allow-scripts',
                         id='plot2',
@@ -99,7 +120,7 @@ row7 = dbc.Row(
                         width='1600',
                         style={'border-width': '0px'},
                         srcDoc = make_class_plot().to_html()
-                        ), width=6),
+                        ), width=5),
 
                 dbc.Col(
                     html.Iframe(
@@ -109,7 +130,10 @@ row7 = dbc.Row(
                         width='1600',
                         style={'border-width': '0px'},
                         srcDoc = make_deck_plot().to_html()
-                        ), width=6)]) 
+                        ), width=5),
+                dbc.Col(
+                    html.H2("", style={'color': 'black', 'fontSize': 20}),    
+                width=1),]) 
 
 footer = dbc.Container([
             dbc.Row(

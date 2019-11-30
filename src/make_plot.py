@@ -47,16 +47,16 @@ def make_titanic_plot(deck_level='B'):
             for passenger in passengers:
                 if i==0:
                     shift_x = 1
-                    shift_y = 0.25
+                    shift_y = 0.2
                 if i==1:
                     shift_x = -1
-                    shift_y = 0.25
+                    shift_y = 0.2
                 if i==2:
                     shift_x = -1
-                    shift_y = -0.25
+                    shift_y = -0.2
                 if i==3:
                     shift_x = 1
-                    shift_y = -0.25
+                    shift_y = -0.2
 
                 titanic_passengers_by_cabin.loc[cabins].at[passenger, "cabin_x"] = float(titanic_passengers_by_cabin.loc[cabins].at[passenger, "cabin_x"]) + shift_x
                 titanic_passengers_by_cabin.loc[cabins].at[passenger, "cabin_y"] = float(titanic_passengers_by_cabin.loc[cabins].at[passenger, "cabin_y"]) + shift_y
@@ -82,22 +82,22 @@ def make_titanic_plot(deck_level='B'):
     chart_ship_outline = chart_ship_outline_1 + chart_ship_outline_2 + chart_ship_outline_3
     
     #plotting cabins
-    cabin_plot = alt.Chart(cabin_locations_df.loc[deck_level]).mark_square(size = 1400, fill = "None", stroke = "black", opacity = 0.3).encode(
+    cabin_plot = alt.Chart(cabin_locations_df.loc[deck_level]).mark_square(size = 600, fill = "None", stroke = "black", opacity = 0.3).encode(
         alt.X('cabin_x:Q', title = "", scale=alt.Scale(domain = [300,480])),
         alt.Y('cabin_y:Q', title = "", scale=alt.Scale(domain = [-1,7.5]))
-    ).properties(width = 1500, height = 400)
+    ).properties(width = 900, height = 300)
     
     titanic_passengers_by_cabin = titanic_passengers_by_cabin.reset_index().set_index(["deck","cabin"])
     titanic_passengers_by_cabin["survived"] = titanic_passengers_by_cabin["survived"].map({0:"Passenger Died", 1:"Passenger Survived"})
     
     #plotting passenger points
-    passenger_plot = alt.Chart(titanic_passengers_by_cabin.loc[deck_level].reset_index()).mark_point(size = 250, stroke = "black", filled = True, opacity = 1).encode(
+    passenger_plot = alt.Chart(titanic_passengers_by_cabin.loc[deck_level].reset_index()).mark_point(size = 80, stroke = "black", filled = True, opacity = 1).encode(
         alt.X('cabin_x:Q', scale=alt.Scale(domain = [300,480])),
         alt.Y('cabin_y:Q', scale=alt.Scale(domain = [-1,7.5])),
         alt.Color('survived:N', scale=alt.Scale(range = ['red','white']), 
                                 legend = alt.Legend(titleFontSize = 0, labelFontSize = 17)),
         tooltip=['name:N', 'sex:N', 'age:O', 'cabin:N']
-    ).properties(width = 1500, height = 400, title = "Fate of titanic passengers by cabin location on deck {}".format(deck_level))
+    ).properties(width = 900, height = 300, title = "Fate of titanic passengers by cabin location on deck {}".format(deck_level))
     
     #combine passenger, cabin and ship outline
     full_plot = (cabin_plot + passenger_plot + chart_ship_outline
@@ -121,7 +121,7 @@ def make_class_plot():
     chart = alt.Chart(source_2).mark_bar(size = 30, fill = "grey", stroke = "black").encode(
             alt.X('survived:Q', title = "Rate of Survival (%)"),
             alt.Y("pclass:O", title = "Class")
-        ).properties(title = "Survival Rate by Class", width = 850, height=200
+        ).properties(title = "Survival Rate by Class", width = 550, height=170
         ).configure_axis(grid=False, titleFontSize=16, labelFontSize = 16
         ).configure_title(fontSize = 20)
     return chart
@@ -138,9 +138,9 @@ def make_deck_plot():
     titanic_deck_df = titanic_deck_df.groupby('deck').mean()*100
     titanic_deck_df = titanic_deck_df.reset_index()
     chart = alt.Chart(titanic_deck_df).mark_bar(size = 20, fill = "grey", stroke = "black").encode(
-            alt.X('survived:Q', title = "Rate of Survival (%)"),
+            alt.X('survived:Q', title = "Rate of Survival (%)", scale = alt.Scale(domain = [0, 70])),
             alt.Y("deck:O", title = "Deck")
-        ).properties(title = "Survival Rate by Deck", width = 850, height=200
+        ).properties(title = "Survival Rate by Deck", width = 550, height=170
         ).configure_axis(grid=False, titleFontSize=18, labelFontSize = 16
         ).configure_title(fontSize = 20)
     return chart
@@ -228,7 +228,7 @@ def make_deck_legend(deck_level='B'):
     #combine outline, line for each level, annotations and highlight desired level
     chart = (deck_legend_outline + deck_level_A + deck_level_B + deck_level_C + deck_level_D + \
              deck_level_E + deck_level_F + deck_level_G + points + current_level + text
-            ).properties(width = 200, height = 400
+            ).properties(width = 200, height = 300
             ).configure_axis(grid=False, titleFontSize=0, labelColor = "white"
             ).configure_title(fontSize = 20
             )
