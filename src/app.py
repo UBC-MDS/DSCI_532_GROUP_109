@@ -56,12 +56,8 @@ row2 = dbc.Row(
                     html.H2("", style={'color': 'black', 'fontSize': 20}),    
                 width=1),
                 dbc.Col(
-                    html.H2("The sinking of the Titanic four days into its maiden voyage on April 12, 1912 \
-                        as the world’s largest ocean liner is one of the worst maritime disasters of all time \
-                        which killed over 1,500 of the estimated 2,224 passengers and crew on board.\
-                        This app has been created to support an exploratory research proposal on the correlation \
-                        of passenger location with survival rates which may be used to improve and democratize \
-                        safety in the design of large passenger ships.", style={'color': 'black', 'fontSize': 20}),    
+                    html.H2("The sinking of the Titanic on April 12, 1912 four days into its maiden voyage as the world’s largest ocean liner is one of the worst maritime disasters of all time which killed over 1,500 of the estimated 2,224 passengers and crew on board. This app has been created to support an exploratory research proposal on the correlation of passenger location with survival rates which may be used to improve and democratize safety in the design of large passenger ships..", 
+                    style={'color': 'black', 'fontSize': 20}),    
                 width=10)
                 ])
 
