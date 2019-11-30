@@ -9,6 +9,6 @@ Using this data, we will create a new variable `death_rates_class` by grouping p
 For example, a passenger of class (`pclass`) 1 in cabin (`cabin`) A22 would be grouped into the category Deck A 1st Class, which we will compute a death rate for, based on all the passengers that survived and did not survive in that category.
 
 ### Research questions and usage scenarios
-We will address one exploratory research questions: does the cabin location of a passenger affect his or her survival on an ocean liner?
+We will address one exploratory research question: does the cabin location of a passenger affect his or her survival on an ocean liner?
 
 Trevor is a transportation policy maker for ocean liners and wants to prioritize the safety of ship passengers in future implementations of transportation policies. In order to do this, he must first understand factors that affect passenger safety. When Trevor looks at our “Titanic Survival Counts App”, he will be able to view a visual summary of whether or not each passenger survived and their respective cabin and deck locations. He can select the deck he wishes to explore and can hover over each data point to view demographic information of each individual passenger including their name, age, and gender. In doing so, Trevor may notice that certain class sections of certain decks may appear to have a higher death count or death rate. He then hypothesizes in a future study that certain locations of the ocean liner may be deemed relatively unsafe for passengers in comparison to other locations of the ocean liner. 
