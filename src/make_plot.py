@@ -80,8 +80,10 @@ def make_titanic_plot(deck_level='B'):
     #titanic_df_with_cabin_coords = pd.merge(titanic_df, cabin_locations_df, left_on = "cabin", right_on = "cabin")
     #titanic_df_with_cabin_coords["deck"] = titanic_df_with_cabin_coords["cabin"].apply(lambda x: x[0])
     #titanic_passengers_by_cabin = titanic_df_with_cabin_coords.set_index(["cabin","name"]).sort_index()
+    
     titanic_passengers_by_cabin = pd.read_csv("../data/wrangled_titanic_df.csv").fillna("None")
-    titanic_passengers_by_cabin = titanic_passengers_by_cabin.set_index(["cabin","name"])
+    titanic_passengers_by_cabin = titanic_passengers_by_cabin.set_index(["cabin","name"]).sort_index()
+    titanic_passengers_by_cabin["survived"] = titanic_passengers_by_cabin["survived"].map({"Passenger Died":0, "Passenger Survived":1})
     
     #separate coordinates for passengers in same cabin
     for cabins in titanic_passengers_by_cabin.index.levels[0]:
