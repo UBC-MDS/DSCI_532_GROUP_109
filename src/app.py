@@ -102,7 +102,12 @@ row6 = dbc.Row(
                         id='dd-chart',
                         options=[
                             {'label': 'Deck A', 'value': 'A'},
-                            {'label': 'Deck B', 'value': 'B'}
+                            {'label': 'Deck B', 'value': 'B'},
+                            {'label': 'Deck C', 'value': 'C'},
+                            {'label': 'Deck D', 'value': 'D'},
+                            {'label': 'Deck E', 'value': 'E'},
+                            {'label': 'Deck F', 'value': 'F'},
+                            {'label': 'Deck G', 'value': 'G'}
                         ],
                         value='B', style=dict(width='45%')
                         ), width='6'

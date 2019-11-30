@@ -31,3 +31,163 @@ B79,"Maioni, Miss. Roberta",1,Passenger Survived,female,16.0,0,0,110152,86.5,S,8
 B80,"Lurette, Miss. Elise",1,Passenger Survived,female,58.0,0,0,PC 17569,146.5208,C,None,None,None,365.0,5.0,B
 B86,"Giglio, Mr. Victor",1,Passenger Died,male,24.0,0,0,PC 17593,79.2,C,None,None,None,355.0,5.0,B
 B94,"Harrison, Mr. William",1,Passenger Died,male,40.0,0,0,112059,0.0,S,None,110.0,None,340.0,6.0,B
+C101,"Appleton, Mrs. Edward Dale (Charlotte Lamson)",1,Passenger Survived,female,53.0,2,0,11769,51.4792,S,D,None,"Bayside, Queens, NY",385.0,2.0,C
+C101,"Brown, Mrs. John Murray (Caroline Lane Lamson)",1,Passenger Survived,female,59.0,2,0,11769,51.4792,S,D,None,"Belmont, MA",385.0,2.0,C
+C101,"Cornell, Mrs. Robert Clifford (Malvina Helen Lamson)",1,Passenger Survived,female,55.0,2,0,11770,25.7,S,2,None,"New York, NY",385.0,2.0,C
+C103,"Bonnell, Miss. Elizabeth",1,Passenger Survived,female,58.0,0,0,113783,26.55,S,8,None,"Birkdale, England Cleveland, Ohio",380.0,2.0,C
+C104,"Peuchen, Major. Arthur Godfrey",1,Passenger Survived,male,52.0,0,0,113786,30.5,S,6,None,"Toronto, ON",400.0,5.0,C
+C105,"Oliva y Ocana, Dona. Fermina",1,Passenger Survived,female,39.0,0,0,PC 17758,108.9,C,8,None,None,375.0,2.0,C
+C106,"Maguire, Mr. John Edward",1,Passenger Died,male,30.0,0,0,110469,26.0,S,None,None,"Brockton, MA",395.0,5.0,C
+C106,"Saalfeld, Mr. Adolphe",1,Passenger Survived,male,None,0,0,19988,30.5,S,3,None,"Manchester, England",395.0,5.0,C
+C110,"Porter, Mr. Walter Chamberlain",1,Passenger Died,male,47.0,0,0,110465,52.0,S,None,207.0,"Worcester, MA",380.0,5.0,C
+C111,"Foreman, Mr. Benjamin Laventall",1,Passenger Died,male,30.0,0,0,113051,27.75,C,None,None,"New York, NY",365.0,3.0,C
+C116,"Stengel, Mr. Charles Emil Henry",1,Passenger Survived,male,54.0,1,0,11778,55.4417,C,1,None,"Newark, NJ",365.0,5.0,C
+C116,"Stengel, Mrs. Charles Emil Henry (Annie May Morris)",1,Passenger Survived,female,43.0,1,0,11778,55.4417,C,5,None,"Newark, NJ",365.0,5.0,C
+C118,"Natsch, Mr. Charles H",1,Passenger Died,male,37.0,0,1,PC 17596,29.7,C,None,None,"Brooklyn, NY",365.0,4.0,C
+C124,"Klaber, Mr. Herman",1,Passenger Died,male,None,0,0,113028,26.55,S,None,None,"Portland, OR",360.0,5.0,C
+C124,"Partner, Mr. Austen",1,Passenger Died,male,45.5,0,0,113043,28.5,S,None,166.0,"Surbiton Hill, Surrey",360.0,5.0,C
+C126,"Taylor, Mr. Elmer Zebley",1,Passenger Survived,male,48.0,1,0,19996,52.0,S,5 7,None,"London /  East Orange, NJ",355.0,5.0,C
+C126,"Taylor, Mrs. Elmer Zebley (Juliet Cummins Wright)",1,Passenger Survived,female,None,1,0,19996,52.0,S,5 7,None,"London /  East Orange, NJ",355.0,5.0,C
+C128,"Williams-Lambert, Mr. Fletcher Fellows",1,Passenger Died,male,None,0,0,113510,35.0,S,None,None,"London, England",350.0,5.0,C
+C130,"Geiger, Miss. Amalie",1,Passenger Survived,female,35.0,0,0,113503,211.5,C,4,None,None,345.0,5.0,C
+C132,"Keeping, Mr. Edwin",1,Passenger Died,male,32.5,0,0,113503,211.5,C,None,45.0,None,340.0,4.0,C
+C2,"Pears, Mr. Thomas Clinton",1,Passenger Died,male,29.0,1,0,113776,66.6,S,None,None,"Isleworth, England",465.0,4.0,C
+C2,"Pears, Mrs. Thomas (Edith Wearne)",1,Passenger Survived,female,22.0,1,0,113776,66.6,S,8,None,"Isleworth, England",465.0,4.0,C
+C28,"Schabert, Mrs. Paul (Emma Mock)",1,Passenger Survived,female,35.0,1,0,13236,57.75,C,11,None,"New York, NY",430.0,5.0,C
+C30,"Molson, Mr. Harry Markland",1,Passenger Died,male,55.0,0,0,113787,30.5,S,None,None,"Montreal, PQ",430.0,6.0,C
+C31,"Smith, Mr. Lucien Philip",1,Passenger Died,male,24.0,1,0,13695,60.0,S,None,None,"Huntington, WV",430.0,1.0,C
+C31,"Smith, Mrs. Lucien Philip (Mary Eloise Hughes)",1,Passenger Survived,female,18.0,1,0,13695,60.0,S,6,None,"Huntington, WV",430.0,1.0,C
+C32,"White, Mrs. John Stuart (Ella Holmes)",1,Passenger Survived,female,55.0,0,0,PC 17760,135.6333,C,8,None,"New York, NY / Briarcliff Manor NY",425.0,6.0,C
+C32,"Young, Miss. Marie Grice",1,Passenger Survived,female,36.0,0,0,PC 17760,135.6333,C,8,None,"New York, NY / Washington, DC",425.0,6.0,C
+C39,"Hipkins, Mr. William Edward",1,Passenger Died,male,55.0,0,0,680,50.0,S,None,None,London / Birmingham,415.0,6.0,C
+C45,"Endres, Miss. Caroline Louise",1,Passenger Survived,female,38.0,0,0,PC 17757,227.525,C,4,None,"New York, NY",450.0,3.0,C
+C46,"Cavendish, Mr. Tyrell William",1,Passenger Died,male,36.0,1,0,19877,78.85,S,None,172.0,"Little Onn Hall, Staffs",405.0,6.0,C
+C46,"Cavendish, Mrs. Tyrell William (Julia Florence Siegel)",1,Passenger Survived,female,76.0,1,0,19877,78.85,S,6,None,"Little Onn Hall, Staffs",405.0,6.0,C
+C47,"Marechal, Mr. Pierre",1,Passenger Survived,male,None,0,0,11774,29.7,C,7,None,"Paris, France",445.0,3.0,C
+C49,"Isham, Miss. Ann Elizabeth",1,Passenger Died,female,50.0,0,0,PC 17595,28.7125,C,None,None,"Paris, France New York, NY",440.0,3.0,C
+C50,"Potter, Mrs. Thomas Jr (Lily Alexenia Wilson)",1,Passenger Survived,female,56.0,0,1,11767,83.1583,C,7,None,"Mt Airy, Philadelphia, PA",455.0,4.0,C
+C51,"Gracie, Col. Archibald IV",1,Passenger Survived,male,53.0,0,0,113780,28.5,C,B,None,"Washington, DC",435.0,3.0,C
+C52,"Bjornstrom-Steffansson, Mr. Mauritz Hakan",1,Passenger Survived,male,28.0,0,0,110564,26.55,S,D,None,"Stockholm, Sweden / Washington, DC",450.0,4.0,C
+C52,"Woolner, Mr. Hugh",1,Passenger Survived,male,None,0,0,19947,35.5,S,D,None,"London, England",450.0,4.0,C
+C53,"Tucker, Mr. Gilbert Milligan Jr",1,Passenger Survived,male,31.0,0,0,2543,28.5375,C,7,None,"Albany, NY",430.0,3.0,C
+C54,"Earnshaw, Mrs. Boulton (Olive Potter)",1,Passenger Survived,female,23.0,0,1,11767,83.1583,C,7,None,"Mt Airy, Philadelphia, PA",445.0,4.0,C
+C54,"Hays, Miss. Margaret Bechstein",1,Passenger Survived,female,24.0,0,0,11767,83.1583,C,7,None,"New York, NY",445.0,4.0,C
+C6,"Beattie, Mr. Thomson",1,Passenger Died,male,36.0,0,0,13050,75.2417,C,A,None,"Winnipeg, MN",465.0,5.0,C
+C6,"McCaffry, Mr. Thomas Francis",1,Passenger Died,male,46.0,0,0,13050,75.2417,C,None,292.0,"Vancouver, BC",465.0,5.0,C
+C65,"Penasco y Castellana, Mr. Victor de Satode",1,Passenger Died,male,18.0,1,0,PC 17758,108.9,C,None,None,"Madrid, Spain",365.0,1.0,C
+C65,"Penasco y Castellana, Mrs. Victor de Satode (Maria Josefa Perez de Soto y Vallejo)",1,Passenger Survived,female,17.0,1,0,PC 17758,108.9,C,8,None,"Madrid, Spain",365.0,1.0,C
+C68,"Thayer, Mr. John Borland",1,Passenger Died,male,49.0,1,1,17421,110.8833,C,None,None,"Haverford, PA",380.0,6.0,C
+C68,"Thayer, Mrs. John Borland (Marian Longstreth Morris)",1,Passenger Survived,female,39.0,1,1,17421,110.8833,C,4,None,"Haverford, PA",380.0,6.0,C
+C70,"Thayer, Mr. John Borland Jr",1,Passenger Survived,male,17.0,0,2,17421,110.8833,C,B,None,"Haverford, PA",370.0,6.0,C
+C78,"Minahan, Dr. William Edward",1,Passenger Died,male,44.0,2,0,19928,90.0,Q,None,230.0,"Fond du Lac, WI",350.0,6.0,C
+C78,"Minahan, Miss. Daisy E",1,Passenger Survived,female,33.0,1,0,19928,90.0,Q,14,None,"Green Bay, WI",350.0,6.0,C
+C78,"Minahan, Mrs. William Edward (Lillian E Thorpe)",1,Passenger Survived,female,37.0,1,0,19928,90.0,Q,14,None,"Fond du Lac, WI",350.0,6.0,C
+C78,"Mock, Mr. Philipp Edmund",1,Passenger Survived,male,30.0,1,0,13236,57.75,C,11,None,"New York, NY",350.0,6.0,C
+C80,"Widener, Mr. George Dunton",1,Passenger Died,male,50.0,1,1,113503,211.5,C,None,None,"Elkins Park, PA",345.0,6.0,C
+C80,"Widener, Mrs. George Dunton (Eleanor Elkins)",1,Passenger Survived,female,50.0,1,1,113503,211.5,C,4,None,"Elkins Park, PA",345.0,6.0,C
+C82,"Widener, Mr. Harry Elkins",1,Passenger Died,male,27.0,0,2,113503,211.5,C,None,None,"Elkins Park, PA",335.0,6.0,C
+C83,"Harris, Mr. Henry Birkhardt",1,Passenger Died,male,45.0,1,0,36973,83.475,S,None,None,"New York, NY",330.0,3.0,C
+C83,"Harris, Mrs. Henry Birkhardt (Irene Wallach)",1,Passenger Survived,female,35.0,1,0,36973,83.475,S,D,None,"New York, NY",330.0,3.0,C
+C86,"Douglas, Mr. Walter Donald",1,Passenger Died,male,50.0,1,0,PC 17761,106.425,C,None,62.0,"Deephaven, MN / Cedar Rapids, IA",330.0,6.0,C
+C86,"Douglas, Mrs. Walter Donald (Mahala Dutton)",1,Passenger Survived,female,48.0,1,0,PC 17761,106.425,C,2,None,"Deephaven, MN / Cedar Rapids, IA",330.0,6.0,C
+C92,"Goldenberg, Mr. Samuel L",1,Passenger Survived,male,49.0,1,0,17453,89.1042,C,5,None,"Paris, France / New York, NY",330.0,4.0,C
+C92,"Goldenberg, Mrs. Samuel L (Edwiga Grabowska)",1,Passenger Survived,female,None,1,0,17453,89.1042,C,5,None,"Paris, France / New York, NY",330.0,4.0,C
+C95,"Farthing, Mr. John",1,Passenger Died,male,None,0,0,PC 17483,221.7792,S,None,None,None,400.0,2.0,C
+C97,"Bird, Miss. Ellen",1,Passenger Survived,female,29.0,0,0,PC 17483,221.7792,S,8,None,None,395.0,2.0,C
+C99,"Bissette, Miss. Amelia",1,Passenger Survived,female,35.0,0,0,PC 17760,135.6333,S,8,None,None,390.0,2.0,C
+D11,"Hogeboom, Mrs. John C (Anna Andrews)",1,Passenger Survived,female,51.0,1,0,13502,77.9583,S,10,None,"Hudson, NY",460.0,1.0,D
+D15,"Bazzani, Miss. Albina",1,Passenger Survived,female,32.0,0,0,11813,76.2917,C,8,None,None,455.0,2.0,D
+D15,"Bucknell, Mrs. William Robert (Emma Eliza Ward)",1,Passenger Survived,female,60.0,0,0,11813,76.2917,C,8,None,"Philadelphia, PA",455.0,2.0,D
+D17,"Leader, Dr. Alice (Farnham)",1,Passenger Survived,female,49.0,0,0,17465,25.9292,S,8,None,"New York, NY",455.0,1.0,D
+D17,"Swift, Mrs. Frederick Joel (Margaret Welles Barron)",1,Passenger Survived,female,48.0,0,0,17466,25.9292,S,8,None,"Brooklyn, NY",455.0,1.0,D
+D19,"Kimball, Mr. Edwin Nelson Jr",1,Passenger Survived,male,42.0,1,0,11753,52.5542,S,5,None,"Boston, MA",450.0,2.0,D
+D19,"Kimball, Mrs. Edwin Nelson Jr (Gertrude Parsons)",1,Passenger Survived,female,45.0,1,0,11753,52.5542,S,5,None,"Boston, MA",450.0,2.0,D
+D20,"Eustis, Miss. Elizabeth Mussey",1,Passenger Survived,female,54.0,1,0,36947,78.2667,C,4,None,"Brookline, MA",450.0,6.0,D
+D20,"Stephenson, Mrs. Walter Bertram (Martha Eustis)",1,Passenger Survived,female,52.0,1,0,36947,78.2667,C,4,None,"Haverford, PA",450.0,6.0,D
+D21,"Kenyon, Mr. Frederick R",1,Passenger Died,male,41.0,1,0,17464,51.8625,S,None,None,"Southington / Noank, CT",450.0,1.0,D
+D21,"Kenyon, Mrs. Frederick R (Marion)",1,Passenger Survived,female,None,1,0,17464,51.8625,S,8,None,"Southington / Noank, CT",450.0,1.0,D
+D22,"Borebank, Mr. John James",1,Passenger Died,male,42.0,0,0,110489,26.55,S,None,None,"London / Winnipeg, MB",445.0,2.0,D
+D26,"White, Mr. Percival Wayland",1,Passenger Died,male,54.0,0,1,35281,77.2875,S,None,None,"Brunswick, ME",440.0,5.0,D
+D26,"White, Mr. Richard Frasar",1,Passenger Died,male,21.0,0,1,35281,77.2875,S,None,169.0,"Brunswick, ME",440.0,5.0,D
+D28,"Lines, Miss. Mary Conover",1,Passenger Survived,female,16.0,0,1,PC 17592,39.4,S,9,None,"Paris, France",440.0,6.0,D
+D28,"Lines, Mrs. Ernest H (Elizabeth Lindsey James)",1,Passenger Survived,female,51.0,0,1,PC 17592,39.4,S,9,None,"Paris, France",440.0,6.0,D
+D30,"Marvin, Mr. Daniel Warner",1,Passenger Died,male,19.0,1,0,113773,53.1,S,None,None,"New York, NY",435.0,5.0,D
+D30,"Marvin, Mrs. Daniel Warner (Mary Graham Carmichael Farquarson)",1,Passenger Survived,female,18.0,1,0,113773,53.1,S,10,None,"New York, NY",435.0,5.0,D
+D33,"Harper, Mr. Henry Sleeper",1,Passenger Survived,male,48.0,1,0,PC 17572,76.7292,C,3,None,"New York, NY",435.0,2.0,D
+D33,"Harper, Mrs. Henry Sleeper (Myna Haxtun)",1,Passenger Survived,female,49.0,1,0,PC 17572,76.7292,C,3,None,"New York, NY",435.0,2.0,D
+D34,"Franklin, Mr. Thomas Parham",1,Passenger Died,male,None,0,0,113778,26.55,S,None,None,"Westcliff-on-Sea, Essex",430.0,4.0,D
+D35,"Beckwith, Mr. Richard Leonard",1,Passenger Survived,male,37.0,1,1,11751,52.5542,S,5,None,"New York, NY",430.0,3.0,D
+D35,"Beckwith, Mrs. Richard Leonard (Sallie Monypeny)",1,Passenger Survived,female,47.0,1,1,11751,52.5542,S,5,None,"New York, NY",430.0,3.0,D
+D36,"Newell, Miss. Madeleine",1,Passenger Survived,female,31.0,1,0,35273,113.275,C,6,None,"Lexington, MA",430.0,6.0,D
+D36,"Newell, Miss. Marjorie",1,Passenger Survived,female,23.0,1,0,35273,113.275,C,6,None,"Lexington, MA",430.0,6.0,D
+D37,"Warren, Mr. Frank Manley",1,Passenger Died,male,64.0,1,0,110813,75.25,C,None,None,"Portland, OR",430.0,1.0,D
+D37,"Warren, Mrs. Frank Manley (Anna Sophia Atkinson)",1,Passenger Survived,female,60.0,1,0,110813,75.25,C,5,None,"Portland, OR",430.0,1.0,D
+D38,"Nourney, Mr. Alfred (""Baron von Drachstedt"")",2,Passenger Survived,male,20.0,0,0,SC/PARIS 2166,13.8625,C,7,None,"Cologne, Germany",460.0,4.0,D
+D40,"Frauenthal, Mr. Isaac Gerald",1,Passenger Survived,male,43.0,1,0,17765,27.7208,C,5,None,"New York, NY",460.0,5.0,D
+D43,"Ovies y Rodriguez, Mr. Servando",1,Passenger Died,male,28.5,0,0,PC 17562,27.7208,C,None,189.0,"?Havana, Cuba",450.0,3.0,D
+D45,"Hawksford, Mr. Walter James",1,Passenger Survived,male,None,0,0,16988,30.0,S,3,None,"Kingston, Surrey",445.0,3.0,D
+D46,"Walker, Mr. William Anderson",1,Passenger Died,male,47.0,0,0,36967,34.0208,S,None,None,"East Orange, NJ",445.0,4.0,D
+D47,"Newsom, Miss. Helen Monypeny",1,Passenger Survived,female,19.0,0,2,11752,26.2833,S,5,None,"New York, NY",440.0,3.0,D
+D48,"Newell, Mr. Arthur Webster",1,Passenger Died,male,58.0,0,2,35273,113.275,C,None,122.0,"Lexington, MA",440.0,4.0,D
+D49,"Hassab, Mr. Hammad",1,Passenger Survived,male,27.0,0,0,PC 17572,76.7292,C,3,None,None,435.0,3.0,D
+D50,"Sutton, Mr. Frederick",1,Passenger Died,male,61.0,0,0,36963,32.3208,S,None,46.0,"Haddenfield, NJ",435.0,4.0,D
+D56,"Beesley, Mr. Lawrence",2,Passenger Survived,male,34.0,0,0,248698,13.0,S,13,None,London,360.0,6.0,D
+D6,"Long, Mr. Milton Clyde",1,Passenger Died,male,29.0,0,0,113501,30.0,S,None,126.0,"Springfield, MA",465.0,6.0,D
+D7,"Andrews, Miss. Kornelia Theodosia",1,Passenger Survived,female,63.0,1,0,13502,77.9583,S,10,None,"Hudson, NY",465.0,1.0,D
+D9,"Longley, Miss. Gretchen Fiske",1,Passenger Survived,female,21.0,0,0,13502,77.9583,S,10,None,"Hudson, NY",460.0,2.0,D
+E10,"Pickard, Mr. Berk (Berk Trembisky)",3,Passenger Survived,male,32.0,0,0,SOTON/O.Q. 392078,8.05,S,9,None,None,450.0,1.0,E
+E101,"Keane, Miss. Nora A",2,Passenger Survived,female,None,0,0,226593,12.35,Q,10,None,"Harrisburg, PA",330.0,1.0,E
+E101,"Troutt, Miss. Edwina Celia ""Winnie""",2,Passenger Survived,female,27.0,0,0,34218,10.5,S,16,None,"Bath, England / Massachusetts",330.0,1.0,E
+E101,"Webber, Miss. Susan",2,Passenger Survived,female,32.5,0,0,27267,13.0,S,12,None,"England / Hartford, CT",330.0,1.0,E
+E12,"Anderson, Mr. Harry",1,Passenger Survived,male,48.0,0,0,19952,26.55,S,3,None,"New York, NY",450.0,3.0,E
+E17,"Daly, Mr. Peter Denis ",1,Passenger Survived,male,51.0,0,0,113055,26.55,S,5 9,None,"Lima, Peru",445.0,1.0,E
+E24,"Calderhead, Mr. Edward Pennington",1,Passenger Survived,male,42.0,0,0,PC 17476,26.2875,S,5,None,"New York, NY",425.0,2.0,E
+E24,"Silverthorne, Mr. Spencer Victor",1,Passenger Survived,male,35.0,0,0,PC 17475,26.2875,S,5,None,"St Louis, MO",425.0,2.0,E
+E25,"Flynn, Mr. John Irwin (""Irving"")",1,Passenger Survived,male,36.0,0,0,PC 17474,26.3875,S,5,None,"Brooklyn, NY",425.0,1.0,E
+E25,"McGough, Mr. James Robert",1,Passenger Survived,male,36.0,0,0,PC 17473,26.2875,S,7,None,"Philadelphia, PA",425.0,1.0,E
+E31,"Chaffee, Mr. Herbert Fuller",1,Passenger Died,male,46.0,1,0,W.E.P. 5734,61.175,S,None,None,"Amenia, ND",415.0,1.0,E
+E31,"Chaffee, Mrs. Herbert Fuller (Carrie Constance Toogood)",1,Passenger Survived,female,47.0,1,0,W.E.P. 5734,61.175,S,4,None,"Amenia, ND",415.0,1.0,E
+E33,"Bowerman, Miss. Elsie Edith",1,Passenger Survived,female,22.0,0,1,113505,55.0,S,6,None,"St Leonards-on-Sea, England Ohio",410.0,1.0,E
+E33,"Chibnall, Mrs. (Edith Martha Bowerman)",1,Passenger Survived,female,None,0,1,113505,55.0,S,6,None,"St Leonards-on-Sea, England Ohio",410.0,1.0,E
+E34,"Spedden, Master. Robert Douglas",1,Passenger Survived,male,6.0,0,2,16966,134.5,C,3,None,"Tuxedo Park, NY",405.0,2.0,E
+E34,"Spedden, Mr. Frederic Oakley",1,Passenger Survived,male,45.0,1,1,16966,134.5,C,3,None,"Tuxedo Park, NY",405.0,2.0,E
+E34,"Spedden, Mrs. Frederic Oakley (Margaretta Corning Stone)",1,Passenger Survived,female,40.0,1,1,16966,134.5,C,3,None,"Tuxedo Park, NY",405.0,2.0,E
+E36,"Francatelli, Miss. Laura Mabel",1,Passenger Survived,female,30.0,0,0,PC 17485,56.9292,C,1,None,None,400.0,2.0,E
+E38,"Millet, Mr. Francis Davis",1,Passenger Died,male,65.0,0,0,13509,26.55,S,None,249.0,"East Bridgewater, MA",415.0,3.0,E
+E40,"Burns, Miss. Elizabeth Margaret",1,Passenger Survived,female,41.0,0,0,16966,134.5,C,3,None,None,405.0,3.0,E
+E44,"Silvey, Mr. William Baird",1,Passenger Died,male,50.0,1,0,13507,55.9,S,None,None,"Duluth, MN",395.0,1.0,E
+E44,"Silvey, Mrs. William Baird (Alice Munger)",1,Passenger Survived,female,39.0,1,0,13507,55.9,S,11,None,"Duluth, MN",395.0,1.0,E
+E45,"Compton, Mrs. Alexander Taylor (Mary Eliza Ingersoll)",1,Passenger Survived,female,64.0,0,2,PC 17756,83.1583,C,14,None,"Lakewood, NJ",390.0,2.0,E
+E46,"Hilliard, Mr. Herbert Henry",1,Passenger Died,male,None,0,0,17463,51.8625,S,None,None,"Brighton, MA",390.0,1.0,E
+E46,"McCarthy, Mr. Timothy J",1,Passenger Died,male,54.0,0,0,17463,51.8625,S,None,175.0,"Dorchester, MA",390.0,1.0,E
+E49,"Compton, Miss. Sara Rebecca",1,Passenger Survived,female,39.0,1,1,PC 17756,83.1583,C,14,None,"Lakewood, NJ",385.0,2.0,E
+E50,"Harder, Mr. George Achilles",1,Passenger Survived,male,25.0,1,0,11765,55.4417,C,5,None,"Brooklyn, NY",385.0,1.0,E
+E50,"Harder, Mrs. George Achilles (Dorothy Annan)",1,Passenger Survived,female,25.0,1,0,11765,55.4417,C,5,None,"Brooklyn, NY",385.0,1.0,E
+E52,"Compton, Mr. Alexander Taylor Jr",1,Passenger Died,male,37.0,1,1,PC 17756,83.1583,C,None,None,"Lakewood, NJ",380.0,1.0,E
+E58,"Colley, Mr. Edward Pomeroy",1,Passenger Died,male,47.0,0,0,5727,25.5875,S,None,None,"Victoria, BC",370.0,3.0,E
+E60,"Julian, Mr. Henry Forbes",1,Passenger Died,male,50.0,0,0,113044,26.0,S,None,None,London,365.0,3.0,E
+E63,"Gee, Mr. Arthur H",1,Passenger Died,male,47.0,0,0,111320,38.5,S,None,275.0,"St Anne's-on-Sea, Lancashire",355.0,3.0,E
+E67,"Taussig, Mr. Emil",1,Passenger Died,male,52.0,1,1,110413,79.65,S,None,None,"New York, NY",360.0,1.0,E
+E67,"Taussig, Mrs. Emil (Tillie Mandelbaum)",1,Passenger Survived,female,39.0,1,1,110413,79.65,S,8,None,"New York, NY",360.0,1.0,E
+E68,"Taussig, Miss. Ruth",1,Passenger Survived,female,18.0,0,2,110413,79.65,S,8,None,"New York, NY",355.0,1.0,E
+E77,"Mack, Mrs. (Mary)",2,Passenger Died,female,57.0,0,0,S.O./P.P. 3,10.5,S,None,52.0,"Southampton / New York, NY",345.0,2.0,E
+E8,"Chambers, Mr. Norman Campbell",1,Passenger Survived,male,27.0,1,0,113806,53.1,S,5,None,"New York, NY / Ithaca, NY",455.0,1.0,E
+E8,"Chambers, Mrs. Norman Campbell (Bertha Griggs)",1,Passenger Survived,female,33.0,1,0,113806,53.1,S,5,None,"New York, NY / Ithaca, NY",455.0,1.0,E
+F2,"Navratil, Master. Edmond Roger",2,Passenger Survived,male,2.0,1,1,230080,26.0,S,D,None,"Nice, France",360.0,5.0,F
+F2,"Navratil, Master. Michel M",2,Passenger Survived,male,3.0,1,1,230080,26.0,S,D,None,"Nice, France",360.0,5.0,F
+F2,"Navratil, Mr. Michel (""Louis M Hoffman"")",2,Passenger Died,male,36.5,0,2,230080,26.0,S,None,15.0,"Nice, France",360.0,5.0,F
+F2,"Nesson, Mr. Israel",2,Passenger Died,male,26.0,0,0,244368,13.0,S,None,None,"Boston, MA",360.0,5.0,F
+F33,"Brown, Miss. Amelia ""Mildred""",2,Passenger Survived,female,24.0,0,0,248733,13.0,S,11,None,"London / Montreal, PQ",335.0,2.0,F
+F33,"Cook, Mrs. (Selena Rogers)",2,Passenger Survived,female,22.0,0,0,W./C. 14266,10.5,S,14,None,Pennsylvania,335.0,2.0,F
+F33,"Lemore, Mrs. (Amelia Milley)",2,Passenger Survived,female,34.0,0,0,C.A. 34260,10.5,S,14,None,"Chicago, IL",335.0,2.0,F
+F33,"Nye, Mrs. (Elizabeth Ramell)",2,Passenger Survived,female,29.0,0,0,C.A. 29395,10.5,S,11,None,"Folkstone, Kent / New York, NY",335.0,2.0,F
+F38,"Tobin, Mr. Roger",3,Passenger Died,male,None,0,0,383121,7.75,Q,None,None,None,330.0,5.0,F
+F4,"Becker, Master. Richard F",2,Passenger Survived,male,1.0,2,1,230136,39.0,S,11,None,"Guntur, India / Benton Harbour, MI",360.0,6.0,F
+F4,"Becker, Miss. Marion Louise",2,Passenger Survived,female,4.0,2,1,230136,39.0,S,11,None,"Guntur, India / Benton Harbour, MI",360.0,6.0,F
+F4,"Becker, Miss. Ruth Elizabeth",2,Passenger Survived,female,12.0,2,1,230136,39.0,S,13,None,"Guntur, India / Benton Harbour, MI",360.0,6.0,F
+F4,"Becker, Mrs. Allen Oliver (Nellie E Baumgardner)",2,Passenger Survived,female,36.0,0,3,230136,39.0,S,11,None,"Guntur, India / Benton Harbour, MI",360.0,6.0,F
+G6,"Sandstrom, Miss. Beatrice Irene",3,Passenger Survived,female,1.0,1,1,PP 9549,16.7,S,13,None,None,360.0,5.0,G
+G6,"Sandstrom, Miss. Marguerite Rut",3,Passenger Survived,female,4.0,1,1,PP 9549,16.7,S,13,None,None,360.0,5.0,G
+G6,"Sandstrom, Mrs. Hjalmar (Agnes Charlotta Bengtsson)",3,Passenger Survived,female,24.0,0,2,PP 9549,16.7,S,13,None,None,360.0,5.0,G
+G6,"Strom, Miss. Telma Matilda",3,Passenger Died,female,2.0,0,1,347054,10.4625,S,None,None,None,360.0,5.0,G
+G6,"Strom, Mrs. Wilhelm (Elna Matilda Persson)",3,Passenger Died,female,29.0,1,1,347054,10.4625,S,None,None,None,360.0,5.0,G
