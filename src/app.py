@@ -56,25 +56,35 @@ row2 = dbc.Row(
                     html.H2("", style={'color': 'black', 'fontSize': 20}),    
                 width=1),
                 dbc.Col(
-                    html.H2("The sinking of the Titanic on April 12, 1912 four days into its maiden voyage as the world’s largest ocean liner is one of the worst maritime disasters of all time which killed over 1,500 of the estimated 2,224 passengers and crew on board. This app has been created to support an exploratory research proposal on the correlation of passenger location with survival rates which may be used to improve and democratize safety in the design of large passenger ships..", 
+                    html.H2("Important note: Please adjust zoom of your web browser if default plot dimensions and positions are skewed.", 
+                    style={'color': 'red', 'fontSize': 14}),    
+                width=10)
+                ])
+
+row3 = dbc.Row(
+                [dbc.Col(
+                    html.H2("", style={'color': 'black', 'fontSize': 20}),    
+                width=1),
+                dbc.Col(
+                    html.H2("The sinking of the Titanic on April 12, 1912 four days into its maiden voyage as the world’s largest ocean liner is one of the worst maritime disasters of all time which killed over 1,500 of the estimated 2,224 passengers and crew on board. This app has been created to support an exploratory research proposal on the correlation of passenger location with survival rates which may be used to improve and democratize safety in the design of large passenger ships.", 
                     style={'color': 'black', 'fontSize': 20}),    
                 width=10)
                 ])
 
 #Rows for spacing between intro and viz
-row3 = dbc.Row(
-                [dbc.Col(
-                    html.H2("", style={'color': 'black', 'fontSize': 14}),    
-                width=7)
-                ])
 row4 = dbc.Row(
                 [dbc.Col(
                     html.H2("", style={'color': 'black', 'fontSize': 14}),    
                 width=7)
                 ])
-
-
 row5 = dbc.Row(
+                [dbc.Col(
+                    html.H2("", style={'color': 'black', 'fontSize': 14}),    
+                width=7)
+                ])
+
+
+row6 = dbc.Row(
                 [dbc.Col(
                     html.H2("", style={'color': 'black', 'fontSize': 20}),    
                 width=1),
@@ -100,7 +110,7 @@ row5 = dbc.Row(
                 width=1)]
             )
 
-row6 = dbc.Row(
+row7 = dbc.Row(
                 [dbc.Col(
                     html.H2("", style={'color': 'black', 'fontSize': 20}),    
                 width=1),
@@ -115,7 +125,7 @@ row6 = dbc.Row(
                 width=1)
                 ])
             
-row7 = dbc.Row(
+row8 = dbc.Row(
                 [dbc.Col(
                     html.H2("", style={'color': 'black', 'fontSize': 20}),    
                 width=1),
@@ -135,7 +145,7 @@ row7 = dbc.Row(
                         ), width='6'
                     )])
 
-row8 = dbc.Row(
+row9 = dbc.Row(
                 [dbc.Col(
                     html.H2("", style={'color': 'black', 'fontSize': 20}),    
                 width=1),
@@ -180,6 +190,7 @@ app.layout = html.Div([jumbotron,
                        row6,
                        row7,
                        row8,
+                       row9,
                        footer])
 
 @app.callback(
