@@ -9,7 +9,7 @@ def make_titanic_plot(deck_level='B'):
     deck_level (string) desired deck to be shown in plot, defaults to deck 'B'. Options are 'A'-'G'.
     """
     #load titanic data set
-    titanic_df = pd.read_csv("../data/titanic.csv").fillna("None")
+    titanic_df = pd.read_csv("data/titanic.csv").fillna("None")
     
     #map cabins to coordinates for plotting
     cabin_locations = {"A36": (350, 1.0), "A37": (350, 6.0), "A32": (400, 6.0), "A30": (400, 5.0), "A31": (400, 2.0), "A33": (400, 1.0), "A28": (405, 6.0), "A26": (405, 5.0), "A27": (405, 2.0),
@@ -81,7 +81,7 @@ def make_titanic_plot(deck_level='B'):
     #titanic_df_with_cabin_coords["deck"] = titanic_df_with_cabin_coords["cabin"].apply(lambda x: x[0])
     #titanic_passengers_by_cabin = titanic_df_with_cabin_coords.set_index(["cabin","name"]).sort_index()
     
-    titanic_passengers_by_cabin = pd.read_csv("../data/wrangled_titanic_df.csv").fillna("None")
+    titanic_passengers_by_cabin = pd.read_csv("data/wrangled_titanic_df.csv").fillna("None")
     titanic_passengers_by_cabin = titanic_passengers_by_cabin.set_index(["cabin","name"]).sort_index()
     titanic_passengers_by_cabin["survived"] = titanic_passengers_by_cabin["survived"].map({"Passenger Died":0, "Passenger Survived":1})
     
@@ -160,7 +160,7 @@ def make_class_plot():
     """
     Function which plots the survival rate of titanic passengers as a function of passenger class
     """
-    titanic_df = pd.read_csv("../data/titanic.csv").fillna("None")
+    titanic_df = pd.read_csv("data/titanic.csv").fillna("None")
     class_survived_df = titanic_df[['pclass','survived']]
     source_1 = class_survived_df.groupby('pclass').mean()*100
     source_2 = source_1.reset_index()
@@ -179,7 +179,7 @@ def make_deck_plot():
     """
     Function which plots the survival rate of titanic passengers as a function of deck level of their cabin
     """
-    titanic_deck_df = pd.read_csv("../data/wrangled_titanic_df.csv").fillna("None")
+    titanic_deck_df = pd.read_csv("data/wrangled_titanic_df.csv").fillna("None")
     titanic_deck_df['survived'] = titanic_deck_df['survived'].map({'Passenger Survived':1, 'Passenger Died':0})
     titanic_deck_df = titanic_deck_df.groupby('deck').mean()*100
     titanic_deck_df = titanic_deck_df.reset_index()
