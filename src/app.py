@@ -15,7 +15,7 @@ jumbotron = dbc.Jumbotron(
     [
         dbc.Container(
             [
-                html.Img(src='https://www.thoughtco.com/thmb/JAh1c6CpoPyyuPo3H-kEi0ZocZ0=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/the-titanic-HK4695-001-57d8674f3df78c58339ac2fd.jpg', 
+                html.Img(src='https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/RMS_Titanic_3.jpg/600px-RMS_Titanic_3.jpg', 
                       width='500px'),
                 html.H1("Fate of Titanic Passengers by Location on Ship", className="display-3"),
             ],
@@ -26,6 +26,25 @@ jumbotron = dbc.Jumbotron(
 )
 
 row1 = dbc.Row(
+                [dbc.Col(
+                    html.H2("Placeholder text for intro", style={'color': 'black', 'fontSize': 20}),    
+                width=7)
+                ])
+
+#Rows for spacing between intro and viz
+row2 = dbc.Row(
+                [dbc.Col(
+                    html.H2("", style={'color': 'black', 'fontSize': 14}),    
+                width=7)
+                ])
+row3 = dbc.Row(
+                [dbc.Col(
+                    html.H2("", style={'color': 'black', 'fontSize': 14}),    
+                width=7)
+                ])
+
+
+row4 = dbc.Row(
                 [dbc.Col(
                     html.Iframe(
                         sandbox='allow-scripts',
@@ -45,7 +64,7 @@ row1 = dbc.Row(
                         ), width=2)]
             )
 
-row2 = dbc.Row(
+row5 = dbc.Row(
                 [dbc.Col(
                     html.H4("Choose a deck to display:", style={'color': 'black', 'fontSize': 14}),    
                 width=7),
@@ -54,7 +73,7 @@ row2 = dbc.Row(
                 width=3)
                 ])
             
-row3 = dbc.Row(
+row6 = dbc.Row(
                 [dbc.Col(    
                     dcc.Dropdown(
                         id='dd-chart',
@@ -66,7 +85,7 @@ row3 = dbc.Row(
                         ), width='6'
                     )])
 
-row4 = dbc.Row(
+row7 = dbc.Row(
                 [dbc.Col(
                     html.Iframe(
                         sandbox='allow-scripts',
@@ -100,7 +119,10 @@ app.layout = html.Div([jumbotron,
                        row1,
                        row2,
                        row3,
-                       row4, 
+                       row4,
+                       row5, 
+                       row6,
+                       row7,
                        footer])
 
 @app.callback(
