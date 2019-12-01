@@ -10,4 +10,4 @@ In additional to this visualization, two bar graphs allow users to see the aggre
 
 Please click the link below to view and use our app  
 
-![DSCI 532 Group 109 Titantic Dashboard App](https://dsci-532-group-109-milestone2.herokuapp.com/)
+[DSCI 532 Group 109 Titantic Dashboard App](https://dsci-532-group-109-milestone2.herokuapp.com/)
