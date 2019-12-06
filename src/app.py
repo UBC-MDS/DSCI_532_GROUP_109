@@ -62,7 +62,7 @@ row3 = dbc.Row(
                     html.H2("", style={'color': 'black', 'fontSize': 20}),    
                 width=1),
                 dbc.Col(
-                    html.H2("Please adjust zoom of your web browser if default plot dimensions and positions are skewed.", 
+                    html.H2("Please adjust zoom of your web browser if default plot dimensions and positions are skewed", 
                     style={'color': 'red', 'fontSize': 20}),    
                 width=10)
                 ])
@@ -100,7 +100,7 @@ row8 = dbc.Row(
                     html.H2("", style={'color': 'black', 'fontSize': 20}),    
                 width=1),
                 dbc.Col(
-                    html.H4("Each deck level contains passenger cabins of all classes.", style={'color': 'light blue', 'fontSize': 20}),
+                    html.H4("Each deck level contains passenger cabins of all classes", style={'color': 'light blue', 'fontSize': 20}),
                 width=8),
                 dbc.Col(
                     html.H4("Choose a deck to display", style={'color': 'light blue', 'fontSize': 20}),    
@@ -115,7 +115,7 @@ row9 = dbc.Row(
                     html.H2("", style={'color': 'black', 'fontSize': 20}),    
                 width=1),
                 dbc.Col(
-                    html.H4("Hover over passenger for more information.", style={'color': 'light blue', 'fontSize': 20}),
+                    html.H4("Hover over passenger for more information", style={'color': 'light blue', 'fontSize': 20}),
                 width=8),
                 dbc.Col(    
                     dcc.Dropdown(
