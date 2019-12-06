@@ -31,7 +31,7 @@ jumbotron = dbc.Row(
                     html.H2("", style={'color': 'black', 'fontSize': 20}),    
                 width=1),
                 dbc.Col([
-                    html.Img(src='https://github.com/RobBlumberg/titanic_image/blob/master/titanic_header.jpg.png?raw=true', 
+                    html.Img(src='https://github.com/RobBlumberg/titanic_image/blob/master/titanic_header_new.png?raw=true', 
                       width='1500px'),
                     #html.Img(src='https://www.fxguide.com/wp-content/uploads/2012/04/titanic_featured.jpg', 
                     #  width='1400px'),
@@ -53,15 +53,27 @@ row1 = dbc.Row(
 
 row2 = dbc.Row(
                 [dbc.Col(
-                    html.H2("", style={'color': 'black', 'fontSize': 20}),    
-                width=1),
-                dbc.Col(
-                    html.H2("Important note: Please adjust zoom of your web browser if default plot dimensions and positions are skewed.", 
-                    style={'color': 'red', 'fontSize': 14}),    
-                width=10)
+                    html.H2("", style={'color': 'black', 'fontSize': 14}),    
+                width=7)
                 ])
 
 row3 = dbc.Row(
+                [dbc.Col(
+                    html.H2("", style={'color': 'black', 'fontSize': 20}),    
+                width=1),
+                dbc.Col(
+                    html.H2("Please adjust zoom of your web browser if default plot dimensions and positions are skewed.", 
+                    style={'color': 'red', 'fontSize': 20}),    
+                width=10)
+                ])
+
+row4 = dbc.Row(
+                [dbc.Col(
+                    html.H2("", style={'color': 'black', 'fontSize': 14}),    
+                width=7)
+                ])
+
+row5 = dbc.Row(
                 [dbc.Col(
                     html.H2("", style={'color': 'black', 'fontSize': 20}),    
                 width=1),
@@ -72,19 +84,56 @@ row3 = dbc.Row(
                 ])
 
 #Rows for spacing between intro and viz
-row4 = dbc.Row(
-                [dbc.Col(
-                    html.H2("", style={'color': 'black', 'fontSize': 14}),    
-                width=7)
-                ])
-row5 = dbc.Row(
-                [dbc.Col(
-                    html.H2("", style={'color': 'black', 'fontSize': 14}),    
-                width=7)
-                ])
-
-
 row6 = dbc.Row(
+                [dbc.Col(
+                    html.H2("", style={'color': 'black', 'fontSize': 14}),    
+                width=7)
+                ])
+row7 = dbc.Row(
+                [dbc.Col(
+                    html.H2("", style={'color': 'black', 'fontSize': 14}),    
+                width=7)
+                ])
+
+row8 = dbc.Row(
+                [dbc.Col(
+                    html.H2("", style={'color': 'black', 'fontSize': 20}),    
+                width=1),
+                dbc.Col(
+                    html.H4("Each deck level contains passenger cabins of all classes.", style={'color': 'light blue', 'fontSize': 20}),
+                width=8),
+                dbc.Col(
+                    html.H4("Choose a deck to display", style={'color': 'light blue', 'fontSize': 20}),    
+                width=2),
+                dbc.Col(
+                    html.H2("", style={'color': 'black', 'fontSize': 20}),    
+                width=1)
+                ])
+
+row9 = dbc.Row(
+                [dbc.Col(
+                    html.H2("", style={'color': 'black', 'fontSize': 20}),    
+                width=1),
+                dbc.Col(
+                    html.H4("Hover over passenger for more information.", style={'color': 'light blue', 'fontSize': 20}),
+                width=8),
+                dbc.Col(    
+                    dcc.Dropdown(
+                        id='dd-chart',
+                        options=[
+                            {'label': 'Deck A', 'value': 'A'},
+                            {'label': 'Deck B', 'value': 'B'},
+                            {'label': 'Deck C', 'value': 'C'},
+                            {'label': 'Deck D', 'value': 'D'},
+                            {'label': 'Deck E', 'value': 'E'},
+                            {'label': 'Deck F', 'value': 'F'},
+                            {'label': 'Deck G', 'value': 'G'}
+                        ],
+                        value='C', style=dict(width='100%')
+                        ), width=2
+                    )])
+
+row10 = dbc.Row(
                 [dbc.Col(
                     html.H2("", style={'color': 'black', 'fontSize': 20}),    
                 width=1),
@@ -110,42 +159,13 @@ row6 = dbc.Row(
                 width=1)]
             )
 
-row7 = dbc.Row(
+row11 = dbc.Row(
                 [dbc.Col(
-                    html.H2("", style={'color': 'black', 'fontSize': 20}),    
-                width=1),
-                dbc.Col(
-                    html.H4("Choose a deck to display", style={'color': 'light blue', 'fontSize': 18}),    
-                width=5),
-                dbc.Col(
-                    html.H4("Note: Each deck level above contains passenger cabins of all classes.", style={'color': 'light blue', 'fontSize': 18}),
-                width=3),
-                dbc.Col(
-                    html.H2("", style={'color': 'black', 'fontSize': 20}),    
-                width=1)
+                    html.H2("--------|", style={'color': 'white', 'fontSize': 40}),    
+                width=7)
                 ])
-            
-row8 = dbc.Row(
-                [dbc.Col(
-                    html.H2("", style={'color': 'black', 'fontSize': 20}),    
-                width=1),
-                dbc.Col(    
-                    dcc.Dropdown(
-                        id='dd-chart',
-                        options=[
-                            {'label': 'Deck A', 'value': 'A'},
-                            {'label': 'Deck B', 'value': 'B'},
-                            {'label': 'Deck C', 'value': 'C'},
-                            {'label': 'Deck D', 'value': 'D'},
-                            {'label': 'Deck E', 'value': 'E'},
-                            {'label': 'Deck F', 'value': 'F'},
-                            {'label': 'Deck G', 'value': 'G'}
-                        ],
-                        value='B', style=dict(width='45%')
-                        ), width='6'
-                    )])
 
-row9 = dbc.Row(
+row12 = dbc.Row(
                 [dbc.Col(
                     html.H2("", style={'color': 'black', 'fontSize': 20}),    
                 width=1),
@@ -186,11 +206,14 @@ app.layout = html.Div([jumbotron,
                        row2,
                        row3,
                        row4,
-                       row5, 
+                       row5,
                        row6,
-                       row7,
+                       row7, 
                        row8,
                        row9,
+                       row10,
+                       row11,
+                       row12,
                        footer])
 
 @app.callback(
