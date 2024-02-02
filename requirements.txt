@@ -1,4 +1,4 @@
-dash==1.6.1
+dash==2.15.0
 numpy==1.17.3
 pandas==0.25.2
 altair==3.2.0
